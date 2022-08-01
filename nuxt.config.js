@@ -3,6 +3,7 @@ import th from "./i18n/locales/th"
 import en from "./i18n/locales/en"
 
 export default {
+    target: "static",
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
         titleTemplate: "%s - hello-word",
