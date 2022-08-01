@@ -51,8 +51,6 @@ export default {
         "@pinia/nuxt",
 
         "@nuxtjs/vuetify",
-
-        '@nuxtjs/ngrok',
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
