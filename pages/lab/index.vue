@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import useLab from "~/pages/lab/useLab";
+import useLab from "./useLab";
 
 export default {
   model: {

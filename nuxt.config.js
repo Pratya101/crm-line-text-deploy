@@ -126,12 +126,7 @@ export default {
         },
     },
 
-    // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
-        // babel: {
-        //   compact: true,
-        // },
-
         extend(config, ctx) {
             config.module.rules.push({
                 test: /\.(ogg|mp3|wav|mpe?g)$/i,
@@ -140,16 +135,6 @@ export default {
                     name: "[path][name].[ext]",
                 },
             });
-        },
-    },
-    bridge: {
-        vite: true,
-    },
-    vite: {
-        css: {
-            modules: {
-                generateScopedName: "[local]__[hash:base64:5]",
-            },
         },
     },
 };

@@ -79,7 +79,7 @@
 </template>
 
 <script>
-import userProfile from "~/pages/profile/userProfile";
+import userProfile from "./userProfile";
 
 export default {
   name: "profile",

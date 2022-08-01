@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import useOpdImage from "~/pages/opdcardimage/useOpdImage";
+import useOpdImage from "./useOpdImage";
 
 export default {
   name: "course",

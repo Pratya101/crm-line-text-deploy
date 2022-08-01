@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import useCourse from "~/pages/course/useCourse";
+import useCourse from "./useCourse";
 
 export default {
   name: "course",

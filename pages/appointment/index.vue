@@ -1,10 +1,10 @@
 <template>
   <div>
     <v-tabs
-      v-model="tab"
-      grow
-      centered
-      background-color="transparent"
+        v-model="tab"
+        grow
+        centered
+        background-color="transparent"
     >
       <v-tab>
         <v-icon small class="me-1">mdi-calendar</v-icon>
@@ -21,7 +21,7 @@
         <Calendar/>
       </v-tab-item>
       <v-tab-item
-        class="mb-2"
+          class="mb-2"
       >
         <Pending/>
       </v-tab-item>
@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import useAppointment from './useAppointment'
+import useAppointment from './useAppointment.js'
 import Calendar from "~/pages/appointment/Calendar";
 import Pending from "~/pages/appointment/Pending";
 
@@ -42,7 +42,9 @@ export default {
   },
   name: "Appointment",
   setup(_, {root}) {
-    return useAppointment(root)
+    return {
+      ...useAppointment(root)
+    }
   },
 
 

@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import useOrder from "~/pages/order/useOrder";
+import useOrder from "./useOrder";
 
 export default {
   model: {
