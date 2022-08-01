@@ -3,7 +3,7 @@ import th from "./i18n/locales/th"
 import en from "./i18n/locales/en"
 
 export default {
-    target: "static",
+    target: "server",
 
     generate: {
         fallback: true
