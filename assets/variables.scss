@@ -1,0 +1,86 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap");
+
+.theme--light.v-card > .v-card__text, .theme--light.v-card > .v-card__subtitle {
+  color: #000
+}
+
+.v-application {
+  font-family: "Kanit", sans-serif;
+}
+
+.v-slide-group.v-item-group > .v-slide-group__next, .v-slide-group.v-item-group > .v-slide-group__prev {
+  cursor: pointer;
+  display: none;
+}
+
+.v-stepper__step__step {
+  align-items: center;
+  border-radius: 50%;
+  display: inline-flex;
+  font-size: 0.75rem;
+  justify-content: center;
+  height: 35px;
+  min-width: 35px;
+  width: 35px;
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.v-application--is-ltr .v-tabs--align-with-title > .v-tabs-bar:not(.v-tabs-bar--show-arrows):not(.v-slide-group--is-overflowing) > .v-slide-group__wrapper > .v-tabs-bar__content > .v-tab:first-child, .v-application--is-ltr .v-tabs--align-with-title > .v-tabs-bar:not(.v-tabs-bar--show-arrows):not(.v-slide-group--is-overflowing) > .v-slide-group__wrapper > .v-tabs-bar__content > .v-tabs-slider-wrapper + .v-tab {
+  margin-left: 0px;
+}
+
+.v-tabs:not(.v-tabs--vertical):not(.v-tabs--right) > .v-slide-group--is-overflowing.v-tabs-bar--is-mobile:not(.v-slide-group--has-affixes) .v-slide-group__prev {
+  display: inline;
+  display: none;
+  /* display: initial; */
+  visibility: hidden;
+}
+
+.theme--light.v-tabs-items {
+  background-color: transparent;
+}
+
+.ribbon2 {
+  z-index: 1;
+  --f: 10px; /* control the folded part*/
+  --r: 15px; /* control the ribbon shape */
+  --t: 81px; /* the top offset */
+  position: absolute;
+  inset: var(--t) calc(-1 * var(--f)) auto auto;
+  padding: 0 10px var(--f) calc(10px + var(--r));
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--f)), calc(100% - var(--f)) 100%,
+          calc(100% - var(--f)) calc(100% - var(--f)), 0 calc(100% - var(--f)),
+          var(--r) calc(50% - var(--f) / 2));
+  background: #f6017e;
+  box-shadow: 0 calc(-1 * var(--f)) 0 inset #0005;
+  right: -10px;
+}
+
+.theme--light.v-tabs .v-tab--active:hover::before, .theme--light.v-tabs .v-tab--active::before {
+
+  opacity: 0.12;
+}
+
+.v-badge__badge {
+  border-radius: 50%;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 12px;
+  height: 20px;
+  width: 20px;
+  letter-spacing: 0;
+  line-height: 1;
+  min-width: 20px;
+  padding: 4px 3px;
+  pointer-events: auto;
+  position: absolute;
+  text-align: center;
+  text-indent: 0;
+  top: auto;
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+  white-space: nowrap;
+}
